@@ -1,0 +1,33 @@
+
+%programs
+\usepackage{amsmath, amssymb, amsthm} % Math environments
+\usepackage{hyperref}                % Links
+\usepackage{enumitem}                % Better lists
+\usepackage{tcolorbox}               % Boxed environments for notes
+\usepackage{geometry}                % Page layout
+\usepackage{microtype} % Adjusts spacing and kerning for better readability
+
+
+
+% shortcuts
+\newcommand{\R}{\mathbb{R}} % For real numbers
+\newcommand{\C}{\mathbf{C}} % For complex numbers
+
+\newcommand{\E}{\mathbb{E}} % For expected value
+\newcommand{\N}{\mathbb{N}} % For natural numbers
+\newcommand{\prob}{\mathbb{P}} % For probability
+\newcommand{\indf}{\mathbf{1}} % indicator function
+%structure theorem allowed
+\newcommand{\threeprob}{(\Sigma, \mathcal{F}, \mathbb{P})} 
+
+
+
+\newtheorem{theorem}{Theorem}[section] % Theorem numbering restarts in each section
+\newtheorem{proposition}[theorem]{Proposition} % Propositions follow Theorem numbering
+\newtheorem{lemma}[theorem]{Lemma} % Lemmas follow Theorem numbering
+\newtheorem{corollary}[theorem]{Corollary} % Corollaries follow Theorem numbering
+
+\theoremstyle{definition} % Change style for definitions and similar environments
+\newtheorem{definition}{Definition}[section] % Definitions restart numbering in each section
+\newtheorem{example}{Example}[section] % Examples restart numbering in each section
+\newtheorem{remark}{Remark}[section] % Remarks restart numbering in each section
