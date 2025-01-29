@@ -703,37 +703,33 @@ Some more notes to motivate completeness, as a titanic effort made by the profes
     This shows that the zeros of \(F[f_\eta]\) do not allow \(\varphi(x)\) to escape the conclusion of being identically zero. Continuity bridges gaps at points of zero, solidifying the result.
 \end{example}
 
-
+\clearpage
 \section{Non-Parametric Estimation}
 
 \subsection{Density estimation (Lebesgue)}
-Let \(x_{1},...,x_{n}\) be identically distributed random variables. Imagine we want to estimate the density \(f_x\) of \(x\) which we assume to lie in a large class of densities\dots
+Let \(x_{1},...,x_{n}\) be identically distributed random variables. Imagine we want to estimate the density \(f_x\) of \(x\) which we assume to lie in a large class of densities.
 
 \begin{example}
-
     \begin{enumerate} We have two examples: \\
         \item Densities such that \(\forall x, x'\in \R\), \(|f_{x}(x)-f_{x}(x')| \geq L|x-x'|\) for a certain \(L>0\). 
-        \item Densities which are monothically increasing on \([\theta,1]\)
+        \item Densities which are monothically increasing on \([0,1]\)
     \end{enumerate}
-
 \end{example}
 
-A nonparametric estimator is the histogram. Assume \(f_x : [0,1]\mapsto \R\) and divide \([0,1]\) into non-overlapping intervals that we denote \((A_j)_{j=1}^{m}\) of length h. We define \(n_{j}= \sum_{i=1}^{n}\indf \{\ x\in A_j \}\ \). Then the histogram estimator is just \(f_{x}(x)=\sum_{j=1}^{n} \frac{n_j}{n\cdot h} \indf \{\ x\in A_j \}\ \) which depends on h (we want the smaller h as possible...). Then we also have this expression: \(f_{x}(x)=\sum_{j=1}^{n} \frac{n_j}{n\cdot h} \indf \{\ x\in A_j \}\ = \frac{1}{n\cdot h}\sum_{i=1}^{n} \sum_{j=1}^{n}  \indf \{\ x_{i} \in A_j ; X \in A_j \}\ \) \\
+A nonparametric estimator is the histogram. Assume \(f_x : [0,1]\mapsto \R\) and divide \([0,1]\) into non-overlapping intervals that we denote \((A_j)_{j=1}^{m}\) of length h. We define \(n_{j}= \sum_{i=1}^{n}\indf \{\ X_i\in A_j \}\ \). Then the histogram estimator is just \(f_{x}(x)=\sum_{j=1}^{m} \frac{n_j}{n\cdot h} \indf \{\ x\in A_j \}\ \) which depends on $h$ (we want the smaller h as possible...). Then we also have this expression: \(f_{x}(x)=\sum_{j=1}^{m} \frac{n_j}{n\cdot h} \indf \{\ x\in A_j \}\ = \frac{1}{n\cdot h}\sum_{i=1}^{n} \sum_{j=1}^{m}  \indf \{\ x_{i} \in A_j ; X \in A_j \}\ \) \\
 
 \begin{definition} \textbf{Kernel Density estimator}
-    Let \(k \in L^{1}(\R)\) s.t \( \int_{\R}K(u) du=1\) and \(\hat{f}_{x}(x)=\frac{1}{nh}\sum_{i=1}^{m}K \left(\frac{X_{i}-X}{n}\right)\) is called a kernel density estimator with kernel k and bandwidth h. 
+    Let \(K \in L^{1}(\R)\) s.t \( \int_{\R}K(u) du=1\) and \(\hat{f}_{x}(x)=\frac{1}{nh}\sum_{i=1}^{m}K \left(\frac{X_{i}-x}{h}\right)\) is called a kernel density estimator with kernel $K$ and bandwidth $h$.\footnote{
+        Some examples of Kernels are given in the class notes, but are omitted here for brevity. }
 \end{definition}
 
 \begin{example}
-    We can start with an estimator of the cdf. Let's for example define \(f_x\) of x as \(F_{x}(x)= \E[\indf \{\ x_i \leq x \}\ ] \), then \( \hat{F}_{x}(x)= \frac{1}{n} \sum_{i=1}^{n}\indf \{\ x_i \leq x \}\ \). We define $f_x$ as the pdf. \(\hat{f}_{x}(x)=\frac{\hat{F}_{x}\left(x+\frac{h}{2}\right)-\hat{F}_{x}\left(x-\frac{h}{2}\right)}{h}\) for a given $h>0$. This is equal to this expression: \(\frac{1}{nh}\sum_{i=1}^{n} \indf \left\{\ x-\frac{h}{2}<x_i \leq x+\frac{h}{2} \right\}\ \). This function is a generalization of the Rosenblatt estimator. For example, we have the following expression: 
+    We can start with an estimator of the CDF. Let's for example define \(F_x\) of $x$ as \(F_{x}(x)= \E[\indf \{\ X_i \leq x \}\ ] \), then \( \hat{F}_{x}(x)= \frac{1}{n} \sum_{i=1}^{n}\indf \{\ X_i \leq x \}\ \). We define $f_x$ as the pdf. \(\hat{f}_{x}(x)=\frac{\hat{F}_{x}\left(x+\frac{h}{2}\right)-\hat{F}_{x}\left(x-\frac{h}{2}\right)}{h}\) for a given $h>0$. This is equal to this expression: \(\frac{1}{nh}\sum_{i=1}^{n} \indf \left\{\ x-\frac{h}{2}<X_i \leq x+\frac{h}{2} \right\}\ \). This function is a generalization of the Rosenblatt estimator. For example, we have the following expression: 
 \end{example}
 
 \begin{remark}
-    If we take expectation of the Kernel function we have the following expression: \(\E(\hat{f}_{x}(x))= \frac{1}{hn}\sum_{\R} \E \left(k\left( \frac{x_i-x}{h}\right)\right)= \frac{1}{h} \E \left(k \left( \frac{x_i-x}{h}\right)\right)  = \frac{1}{h}\int_{\R}\left( \frac{y-x}{h}\right) f_{x}(y) dy\)
+    If we take expectation of the Kernel function we have the following expression: \(\E(\hat{f}_{x}(x))= \frac{1}{hn}\sum_{i = 1}^n \E \left(\left( \frac{x_i-x}{h}\right)\right)= \frac{1}{h} \E \left(k \left( \frac{x_i-x}{h}\right)\right)  = \frac{1}{h}\int_{\R}\left( \frac{y-x}{h}\right) f_{x}(y) dy\)
 \end{remark}
-
-
-Some examples of Kernels are given in the class notes, but are omitted here for brevity. 
 
 \subsubsection{Mean squared error of kernel estimators}
 
