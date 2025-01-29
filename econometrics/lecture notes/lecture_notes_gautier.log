@@ -1,31 +1,31 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.23)  27 JAN 2025 14:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.12.15)  29 JAN 2025 17:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/gabriele/Desktop/Areas/Università/02 Master/M2 S2/Econometrics/collab/TSE_colab/econometrics/lecture notes/lecture_notes_gautier"
-(/Users/gabriele/Desktop/Areas/Università/02 Master/M2 S2/Econometrics/collab/TSE_colab/econometrics/lecture notes/lecture_notes_gautier.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+**"/Users/jorditorresvallverdu/Documents/GitHub/TSE_colab/econometrics/lecture notes/lecture_notes_gautier.tex"
+(/Users/jorditorresvallverdu/Documents/GitHub/TSE_colab/econometrics/lecture notes/lecture_notes_gautier.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+(/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count188
-\c@section=\count189
-\c@subsection=\count190
-\c@subsubsection=\count191
-\c@paragraph=\count192
-\c@subparagraph=\count193
-\c@figure=\count194
-\c@table=\count195
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
-) (../../macros_my.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip50
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+) (../../macros_my.tex (/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -584,30 +584,31 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (./lecture_notes_gautier.toc)
+) (lecture_notes_gautier.toc)
 \tf@toc=\write5
 \openout5 = `lecture_notes_gautier.toc'.
 
- [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+[1
+
+{/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
+
+
 [2
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 146.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/bbm-macros/ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
-Overfull \hbox (34.11284pt too wide) in paragraph at lines 146--147
-[][]\OT1/cmr/bx/n/10 (-20) Definition 1.9. []\OT1/cmr/m/n/10 (-20) X has den-sity $\OML/cmm/m/it/10 f[]$ \OT1/cmr/m/n/10 (-20) with re-spect to the Lebesque mea-sure $(\OML/cmm/m/it/10 dx\OT1/cmr/m/n/10 (-20) )$ on $\U/msb/m/n/10 R$ \OT1/cmr/m/n/10 (-20) if $\U/msb/m/n/10 P[]\OT1/cmr/m/n/10 (-20) (\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 (-20) ) = [][] \U/bbm/m/n/10 1 [] \OML/cmm/m/it/10 f[]dx; \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 2
+
+Overfull \hbox (33.72003pt too wide) in paragraph at lines 146--147
+[][]\OT1/cmr/bx/n/10 (-20) Definition 1.9. []\OT1/cmr/m/n/10 (-20) X has den-sity $\OML/cmm/m/it/10 f[]$ \OT1/cmr/m/n/10 (-20) with re-spect to the Lebesque mea-sure $(\OML/cmm/m/it/10 dx\OT1/cmr/m/n/10 (-20) )$ on $\U/msb/m/n/10 R$ \OT1/cmr/m/n/10 (-20) if $\U/msb/m/n/10 P[]\OT1/cmr/m/n/10 (-20) (\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 (-20) ) = [][] \OT1/cmr/bx/n/10 (-20) 1 [] \OML/cmm/m/it/10 f[]dx; \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 2
  []
 
 
@@ -615,7 +616,17 @@ Overfull \hbox (2.58725pt too wide) in paragraph at lines 150--151
 [][]\OT1/cmr/bx/n/10 (-20) Definition 1.10. []\OT1/cmr/m/n/10 (-20) The sup-port of X (or of $\U/msb/m/n/10 P[]$\OT1/cmr/m/n/10 (-20) ) is de-fined as: $[] = []$
  []
 
-[3] [4] [5] [6] [7]
+
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+
+[7]
 Overfull \hbox (20.87483pt too wide) in paragraph at lines 448--450
 [][]\OT1/cmr/bx/n/10 (-20) Example 1.8. []Ex-er-cise 4.1 $\OT1/cmr/m/n/10 (-20) (\OML/cmm/m/it/10 x[]; z[]\OT1/cmr/m/n/10 (-20) )[]$ has a fi-nite sup-port such that supp(x)=$[]$ and supp(z)=$[]$
  []
@@ -635,6 +646,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 547--549
 
  []
 
+
+
 [9]
 Underfull \hbox (badness 10000) in paragraph at lines 552--553
 
@@ -644,6 +657,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 552--553
 Underfull \hbox (badness 10000) in paragraph at lines 559--561
 
  []
+
+
 
 [10]
 Underfull \hbox (badness 10000) in paragraph at lines 675--676
@@ -659,6 +674,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 677--678
 Underfull \hbox (badness 10000) in paragraph at lines 679--680
 
  []
+
+
 
 [11]
 Underfull \hbox (badness 10000) in paragraph at lines 685--686
@@ -685,60 +702,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 701--702
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 713--714
+
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 719--720
+Underfull \hbox (badness 10000) in paragraph at lines 721--722
 
- []
-
-
-Overfull \hbox (9.47255pt too wide) in paragraph at lines 721--724
-[][]\OT1/cmr/bx/n/10 (-20) Definition 2.1. []Ker-nel Den-sity es-ti-ma-tor \OT1/cmr/m/n/10 (-20) Let $\OML/cmm/m/it/10 K \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (-20) (\U/msb/m/n/10 R\OT1/cmr/m/n/10 (-20) )$ s.t $[][] \OML/cmm/m/it/10 K\OT1/cmr/m/n/10 (-20) (\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (-20) )\OML/cmm/m/it/10 du \OT1/cmr/m/n/10 (-20) = 1$ and $[](\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (-20) ) = [] [][] \OML/cmm/m/it/10 K []$
  []
 
 [13
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 775--776
+
+[12]
+Overfull \hbox (8.35245pt too wide) in paragraph at lines 723--725
+[][]\OT1/cmr/bx/n/10 (-20) Definition 2.1. []Ker-nel Den-sity es-ti-ma-tor \OT1/cmr/m/n/10 (-20) Let $\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (-20) (\U/msb/m/n/10 R\OT1/cmr/m/n/10 (-20) )$ s.t $[][] \OML/cmm/m/it/10 K\OT1/cmr/m/n/10 (-20) (\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (-20) )\OML/cmm/m/it/10 du \OT1/cmr/m/n/10 (-20) = 1$ and $[](\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (-20) ) = [] [][] \OML/cmm/m/it/10 K []$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--810
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 813--814
 
  []
+
+
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 895--896
+Underfull \hbox (badness 10000) in paragraph at lines 899--900
 
  []
+
+
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 958--959
+Underfull \hbox (badness 10000) in paragraph at lines 962--963
 
  []
 
-<trade_off_nonparametrics.png, id=290, 685.56125pt x 542.025pt>
+<trade_off_nonparametrics.png, id=283, 685.56125pt x 542.025pt>
 File: trade_off_nonparametrics.png Graphic file (type png)
 <use trade_off_nonparametrics.png>
-Package pdftex.def Info: trade_off_nonparametrics.png  used on input line 967.
+Package pdftex.def Info: trade_off_nonparametrics.png  used on input line 971.
 (pdftex.def)             Requested size: 375.80544pt x 297.13046pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs_1_nonparametrics.png, id=293, 709.65125pt x 763.85374pt>
+<graphs_1_nonparametrics.png, id=286, 709.65125pt x 763.85374pt>
 File: graphs_1_nonparametrics.png Graphic file (type png)
 <use graphs_1_nonparametrics.png>
-Package pdftex.def Info: graphs_1_nonparametrics.png  used on input line 975.
+Package pdftex.def Info: graphs_1_nonparametrics.png  used on input line 979.
 (pdftex.def)             Requested size: 375.80544pt x 404.51419pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16] [17 <./trade_off_nonparametrics.png>] [18 <./graphs_1_nonparametrics.png>] [19] (./lecture_notes_gautier.aux)
+
+
+[16]
+
+[17 <./trade_off_nonparametrics.png>]
+
+[18 <./graphs_1_nonparametrics.png>]
+
+[19] (lecture_notes_gautier.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -747,18 +779,17 @@ Package rerunfilecheck Info: File `lecture_notes_gautier.out' has not changed.
 (rerunfilecheck)             Checksum: BF3901EA801A8AD0F7750422A2D56115;2923.
  ) 
 Here is how much of TeX's memory you used:
- 22789 strings out of 474116
- 418273 string characters out of 5743681
- 1946187 words of memory out of 5000000
- 44470 multiletter control sequences out of 15000+600000
- 573811 words of font info for 168 fonts, out of 8000000 for 9000
+ 25395 strings out of 473682
+ 493684 string characters out of 5703553
+ 893753 words of memory out of 5000000
+ 47774 multiletter control sequences out of 15000+600000
+ 573152 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,9n,110p,1131b,699s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/gabriele/Library/texlive/2024/texmf-var/fonts/pk/ljfour/public/bbm/bbm8.600pk> </Users/gabriele/Library/texlive/2024/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on lecture_notes_gautier.pdf (19 pages, 592855 bytes).
+ 121i,9n,124p,1102b,700s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on lecture_notes_gautier.pdf (19 pages, 638482 bytes).
 PDF statistics:
- 479 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
- 146 named destinations out of 1000 (max. 500000)
+ 461 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
  34951 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -1,3 +1,7 @@
 *.log
 *.aux
 *.gz
+
+econometrics/lecture notes/*
+!econometrics/lecture notes/*.pdf
+!econometrics/lecture notes/*.tex
