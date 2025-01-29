@@ -5,7 +5,7 @@
 
 
 \title{Lecture Notes on Non-Parametric Econometrics}
-\author{Jordi Torres, ETE}
+\author{ETE spirit}
 \date{These notes have been last updated on \today}
 
 
@@ -821,10 +821,10 @@ Thus, the integral becomes:
 Substituting this result back:
 
 \[
-b(x_0) = -\frac{1}{h^2} \cdot h \cdot f(z) \cdot k\left(\frac{z - x_0}{h}\right) \Big|_{-\infty}^{+\infty} - \frac{1}{h^2} \cdot h \int_{\mathbb{R}} k\left(\frac{z - x_0}{h}\right) f'(z) \, dz - f'(x_0).
+b(x_0) = -\frac{1}{h^2} \cdot h \cdot f(z) \cdot k\left(\frac{z - x_0}{h}\right) \Big|_{-\infty}^{+\infty} + \frac{1}{h^2} \cdot h \int_{\mathbb{R}} k\left(\frac{z - x_0}{h}\right) f'(z) \, dz - f'(x_0).
 \]
 
-The first term vanishes because the kernel \( k \) and the function \( f(z) \) are assumed to decay sufficiently fast at infinity, i.e.,
+The first term vanishes because the kernel \( k \) and the function \( f(z) \) are assumed to decay sufficiently fast at infinity (they are integrable), i.e.,
 
 \[
 \lim_{z \to \pm\infty} f(z) \cdot k\left(\frac{z - x_0}{h}\right) = 0.
@@ -833,16 +833,16 @@ The first term vanishes because the kernel \( k \) and the function \( f(z) \) a
 Thus, the bias simplifies to:
 
 \[
-b(x_0) = -\frac{1}{h^2} \cdot h \int_{\mathbb{R}} k'\left(\frac{z - x_0}{h}\right) f'(z) \, dz - f'(x_0).
+b(x_0) = \frac{1}{h^2} \cdot h \int_{\mathbb{R}} k'\left(\frac{z - x_0}{h}\right) f'(z) \, dz - f'(x_0).
 \]
 
 Now we define \(\mu = \frac{z - x_0}{h}\), so that \(z = \mu h + x_0\) and \(dz = h \cdot d\mu\). Replacing these in the previous expression, we obtain:
 
 \[
-b(x_0) = -\frac{1}{n} \int_{\mathbb{R}} h \cdot k(\mu) \cdot f'(\mu h + x_0) \, d\mu - f'(x_0).
+b(x_0) = \frac{1}{n} \int_{\mathbb{R}} h \cdot k(\mu) \cdot f'(\mu h + x_0) \, d\mu - f'(x_0).
 \]
 
-Using the Taylor expansion for \(f'(\mu h + x_0)\) around \(x_0\), we write:
+By assumption, f is l-time differentiable. Hence, we can use the $(l-1)$ Taylor expansion for \(f'(\mu h + x_0)\) around \(x_0\), we write:
 
 \[
 f'(\mu h + x_0) = f'(x_0) + f''(x_0) \mu h + \frac{f'''(x_0)}{2!} (\mu h)^2 + \cdots + \frac{f^{(l)}(x_0 + \tau \mu h)}{(l-1)!} (\mu h)^{l-1},
@@ -860,7 +860,7 @@ Using the property of the kernel function that \(\int_{\mathbb{R}} \mu^s k(\mu) 
 b(x_0) = \int_{\mathbb{R}} k(\mu) \cdot \frac{f^{(l)}(x_0 + \tau \mu h)}{(l-1)!} (\mu h)^{l-1} \, d\mu.
 \]
 
-Now we introduce the Hölder condition for the function \(f\). A function \(f\) belongs to the Hölder class of order \((l)\) if:
+Now we introduce the Hölder condition for the function \(f\), which holds by assumption. A function \(f\) belongs to the Hölder class of order \((l)\) if:
 
 \[
 |f^{(l)}(x) - f^{(l)}(x')| \leq L |x - x'|^{\beta - l},
@@ -1047,7 +1047,7 @@ Note that the more variables we have in the analysis the  worse it gets...unboun
 \end{remark}
 
 
-Similarly
+
 
 
 

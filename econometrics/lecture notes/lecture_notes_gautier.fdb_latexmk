@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1737912007.30666 "/Users/jorditorresvallverdu/Desktop/GitHub/TSE-2024-2025/econometrics/lecture notes/lecture_notes_gautier.tex" "lecture_notes_gautier.pdf" "lecture_notes_gautier" 1737912008.31845 0
-  "/Users/jorditorresvallverdu/Desktop/GitHub/TSE-2024-2025/econometrics/lecture notes/lecture_notes_gautier.tex" 1737912006.63996 56255 09faf2d462c72a7cc9aa1f07cd9df267 ""
-  "/Users/jorditorresvallverdu/Desktop/GitHub/TSE-2024-2025/macros_my.tex" 1737707494.40319 1427 0ea9e03631d1d0d3f9890bb970fdfbc0 ""
-  "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1737709701.91225 339594 a5b5065d5ac438332843a98ceeded6df ""
+["pdflatex"] 1738166972.17646 "/Users/jorditorresvallverdu/Documents/GitHub/TSE_colab/econometrics/lecture notes/lecture_notes_gautier.tex" "lecture_notes_gautier.pdf" "lecture_notes_gautier" 1738166973.1743 0
+  "../../macros_my.tex" 1737973213.4091 1427 0ea9e03631d1d0d3f9890bb970fdfbc0 ""
+  "/Users/jorditorresvallverdu/Documents/GitHub/TSE_colab/econometrics/lecture notes/lecture_notes_gautier.tex" 1738166971.63584 56364 62891231100796cf81e99a95e6282a37 ""
+  "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1737914617.04195 339594 a5b5065d5ac438332843a98ceeded6df ""
   "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1734277980.39253 11548 65e4107434a595602cca075154f9e8e6 ""
   "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1734277941.08881 12002472 b582eb731daf2b623c3d30845607ef6c ""
   "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1725915925.12221 1436 c7f957a372ef2fbe93c0982f96625e12 ""
@@ -187,14 +187,16 @@
   "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/trimspaces/trimspaces.sty" 1725915933.83664 1380 971a51b00a14503ddf754cab24c3f209 ""
   "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty" 1725915934.0507 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty" 1734275016.41717 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "graphs_1_nonparametrics.png" 1737906932.0956 212269 8ce2a4326dc2bbb95fe3044531b2c1d9 ""
-  "lecture_notes_gautier.aux" 1737912008.17054 2788 a2462a853203369a1e11d0b2e6451535 "pdflatex"
-  "lecture_notes_gautier.out" 1737912008.17143 2923 bf3901ea801a8ad0f7750422a2d56115 "pdflatex"
-  "lecture_notes_gautier.tex" 1737912006.63996 56255 09faf2d462c72a7cc9aa1f07cd9df267 ""
-  "trade_off_nonparametrics.png" 1737907575.07131 113623 447f17145de99397b5639400a2fffdff ""
+  "graphs_1_nonparametrics.png" 1737973213.40371 212269 8ce2a4326dc2bbb95fe3044531b2c1d9 ""
+  "lecture_notes_gautier.aux" 1738166973.02372 2788 94a69b8dc2662f2be42f67e6141604eb "pdflatex"
+  "lecture_notes_gautier.out" 1738166973.02455 2923 bf3901ea801a8ad0f7750422a2d56115 "pdflatex"
+  "lecture_notes_gautier.tex" 1738166971.63584 56364 62891231100796cf81e99a95e6282a37 ""
+  "lecture_notes_gautier.toc" 1738166973.0251 1369 afb75c6a19f62cded4b7b5ebd6f4fa2f "pdflatex"
+  "trade_off_nonparametrics.png" 1737973213.40691 113623 447f17145de99397b5639400a2fffdff ""
   (generated)
   "lecture_notes_gautier.aux"
   "lecture_notes_gautier.log"
   "lecture_notes_gautier.out"
   "lecture_notes_gautier.pdf"
+  "lecture_notes_gautier.toc"
   (rewritten before read)

@@ -1,15 +1,15 @@
-PWD /Users/jorditorresvallverdu/Desktop/GitHub/TSE-2024-2025/econometrics/lecture notes
+PWD /Users/jorditorresvallverdu/Documents/GitHub/TSE_colab/econometrics/lecture notes
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
-INPUT /Users/jorditorresvallverdu/Desktop/GitHub/TSE-2024-2025/econometrics/lecture notes/lecture_notes_gautier.tex
+INPUT /Users/jorditorresvallverdu/Documents/GitHub/TSE_colab/econometrics/lecture notes/lecture_notes_gautier.tex
 OUTPUT lecture_notes_gautier.log
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
-INPUT /Users/jorditorresvallverdu/Desktop/GitHub/TSE-2024-2025/macros_my.tex
-INPUT /Users/jorditorresvallverdu/Desktop/GitHub/TSE-2024-2025/macros_my.tex
-INPUT /Users/jorditorresvallverdu/Desktop/GitHub/TSE-2024-2025/macros_my.tex
+INPUT ../../macros_my.tex
+INPUT ../../macros_my.tex
+INPUT ../../macros_my.tex
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
@@ -284,7 +284,10 @@ INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/inst
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./lecture_notes_gautier.toc
+INPUT ./lecture_notes_gautier.toc
+INPUT lecture_notes_gautier.toc
+INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -293,9 +296,10 @@ INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/inst
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm
+OUTPUT lecture_notes_gautier.toc
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
+INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx5.tfm
 INPUT /Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti10.tfm
