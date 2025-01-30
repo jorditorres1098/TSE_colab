@@ -1,6 +1,14 @@
 \documentclass{article}
 
 \input{../../macros_my.tex}
+
+% With the gabriele command I add some comments that might not be useful for you. Only one of the two lines must be commented, 
+% if the first is commented and the second compiled, my comments are hidden
+% if the first is compiled and the second commented, my comments are shown
+
+% \newcommand{\gabriele}[1]{\todo[inline]{#1}}
+\newcommand{\gabriele}[1]{\hphantom{\vphantom{#1}}}
+
 \geometry{margin=1in}                % Adjust margins
 
 
@@ -22,6 +30,7 @@
 Let \(\Sigma\) be a set, we want to make sense of $\mathbb{P}(F)$ the probability of the event F, where \(F\subseteq\Sigma\).
 
 
+\gabriele{this is a test note}
 
 \begin{definition}
 A collection of subsets of \(\Sigma\) is a \(\sigma\)-algebra if:
@@ -769,8 +778,6 @@ and
     \textit{The quantities $b(x_0)$ and $\sigma^2(x_0)$ are called the bias and the variance of the estimator $\hat{p}_n$ at a point $x_0$, respectively.}
 
 \end{definition}
-
-\textit{The quantities $b(x_0)$ and $\sigma^2(x_0)$ are called the bias and the variance of the estimator $\hat{p}_n$ at a point $x_0$, respectively.}
 
 We will develop here the same reasoning that was developed in the TD. \\
 
