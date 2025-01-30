@@ -6,8 +6,8 @@
 % if the first is commented and the second compiled, my comments are hidden
 % if the first is compiled and the second commented, my comments are shown
 
-% \newcommand{\gabriele}[1]{\todo[inline]{#1}}
-\newcommand{\gabriele}[1]{\hphantom{\vphantom{#1}}}
+\newcommand{\gabriele}[1]{\todo[inline, color=blue!40]{#1}}
+% \newcommand{\gabriele}[1]{\hphantom{\vphantom{#1}}}
 
 \geometry{margin=1in}                % Adjust margins
 
@@ -28,9 +28,6 @@
 \subsection{On measure space}
 
 Let \(\Sigma\) be a set, we want to make sense of $\mathbb{P}(F)$ the probability of the event F, where \(F\subseteq\Sigma\).
-
-
-\gabriele{this is a test note}
 
 \begin{definition}
 A collection of subsets of \(\Sigma\) is a \(\sigma\)-algebra if:
