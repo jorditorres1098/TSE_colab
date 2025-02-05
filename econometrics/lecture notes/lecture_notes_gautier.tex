@@ -1140,7 +1140,6 @@ To obtain a bound on these two objects the method is the same as before and is e
     which describes the kernel in the spatial domain. This form combines the smoothing effect of the sinc function squared with the oscillatory behavior of the cosine factor.
 
 
-
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.4\textwidth]{kernel_2_example.png} % Replace with the actual path to your PNG file
@@ -1149,6 +1148,8 @@ To obtain a bound on these two objects the method is the same as before and is e
     \end{figure}
     
 \end{remark}
+
+\textbf{IMPORTANT:}Missing here is the crossvalidation exercise we did when computing the empirical counterpart of the MISE-check notes or ask professor to understand what we are doing there exactly.
 
 
 \begin{theorem}
@@ -1166,6 +1167,94 @@ To obtain a bound on these two objects the method is the same as before and is e
 \end{corollary}
 
 
+\subsection{Some notes on Lecture 8}
+
+\subsubsection{Other Non-Parametric Estimators}
+
+\textbf{Orthogonal Series Estimators}
+
+An orthonormal basis \(\{e_j\}\) in \(\mathbb{R}^d\) satisfies:
+\[
+\forall j \neq l, \quad \langle e_j, e_l \rangle = 0, \quad \text{and} \quad \langle e_j, e_j \rangle = ||e_j||^2_2 = 1.
+\]
+This means that the functions \(e_j\) are mutually orthogonal and have unit norm.
+
+We equip \( L^2(\mathbb{R}^d) \) with the inner product:
+\[
+\langle f, g \rangle = \int_{\mathbb{R}^d} f(x) g(x) dx.
+\]
+By a fundamental result in functional analysis, there exists an orthonormal basis \( \{e_j\} \) of \( L^2(\mathbb{R}^d) \) such that for any function \( f \in L^2(\mathbb{R}^d) \):
+\[
+\lim_{T \to \infty} \left\| f - \sum_{j=1}^{T} \langle f, e_j \rangle e_j \right\|_2 = 0.
+\]
+This means we can approximate \( f \) arbitrarily well by summing over a finite number of basis functions.
+
+Now, if \( f_x \in L^2(\mathbb{R}^d) \) is a probability density function, we compute its coefficients:
+\[
+c_j = \langle f_x, e_j \rangle = \int_{\mathbb{R}^d} f_x(x) e_j(x) dx.
+\]
+These coefficients can be estimated without bias using the empirical counterpart:
+\[
+\hat{c_j} = \frac{1}{n} \sum_{i=1}^{n} e_j(x_i).
+\]
+Thus, a natural estimator for \( f_x(x) \) is:
+\[
+\hat{f_x}(x) = \sum_{j=1}^{T} \hat{c_j} e_j(x).
+\]
+Expanding this, we obtain:
+\[
+\hat{f_x}(x) = \frac{1}{n} \sum_{i=1}^{n} \sum_{j=1}^{T} e_j(x_i) e_j(x).
+\]
+Here, \( T \) determines the number of basis functions used. Choosing \( T \) correctly is crucial, as it controls the balance between bias (underfitting) and variance (overfitting).
+
+\begin{example}
+    Assume \( \text{supp}(x) \subset [0,1]^d \), then we can take the basis functions as:
+    \[
+    e_j(x) = f_j(x_1) \dots f_j(x_d),
+    \]
+    where \( (f_j)_{j=1}^{\infty} \) is a basis of \( L^2([0,1]^d) \). A natural choice is:
+    \[
+    f_j(x) = \sqrt{2} \sin (\pi j x),
+    \]
+    which forms an orthonormal basis of \( L^2([0,1]) \).
+\end{example}
+
+\textbf{Class Exercise}: Verify that for this choice of basis:
+\[
+\forall l \neq j, \quad \int_{0}^{1} f_j(x) f_l(x) dx = 0,
+\]
+\[
+\forall j, \quad \int_{0}^{1} f_j^2(x) dx = 1.
+\]
+
+Now, consider the transformation relationship \( f_y = A f_x \). If \( A \) is diagonal in the basis \( e_j \), meaning \( A e_j = \lambda_j e_j \), then we can express \( f_x \) as:
+\[
+f_x = \sum_j \frac{\langle f_y, e_j \rangle}{\lambda_j} e_j.
+\]
+This decomposition helps analyze how the transformation \( A \) affects the function \( f_x \).
+
+To study the \textbf{Mean Integrated Squared Error (MISE)}, we analyze the variance:
+\[
+\sigma^2 = \mathbb{E} \left[ ||\hat{f}_x - \mathbb{E}[f_x]||^2_2 \right] = \sum_{j=1}^{T} \mathbb{E} \left[ (\hat{c_j} - c_j)^2 \right].
+\]
+From our lecture, the optimal choice of \( T \) depends on the smoothness \( \beta \) of \( f_x \) and the dimension \( d \), and is given by:
+\[
+T = \left[ n^{\frac{1}{2\beta + d}} \right].
+\]
+However, this choice is not feasible in practice since \( \beta \) is unknown.
+
+\begin{remark}
+    A practical approach is to use a data-driven estimator. We start with a large \( T \) (e.g., \( T = n \)), which results in low bias but high variance. Then, we shrink the coefficients \( \hat{c_j} \) to reduce variance, using methods like:
+    \begin{itemize}
+        \item \textbf{LASSO} (L1 regularization)
+        \item \textbf{BIC} (Bayesian Information Criterion)
+    \end{itemize}
+    These methods select an appropriate set of basis functions automatically.
+\end{remark}
+
+
+
+In the end of the class we were also given some comments on MLE nonparametric estimation. 
 
 
 
