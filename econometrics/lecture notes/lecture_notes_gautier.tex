@@ -1257,7 +1257,10 @@ However, this choice is not feasible in practice since \( \beta \) is unknown.
 In the end of the class we were also given some comments on MLE nonparametric estimation. 
 
 
+\subsection{notes on lecture 9}
 
+\subsubsection{Estimating a regression function}
+\(y=f(x)+ \epsilon\) where \(\E[|\epsilon|]<\infty\) and \(\E[\epsilon/x]=0\). Then if the conditional density function of y on x, denoted \(f_{y|x}\), is given by \(f_{y|X=x}=\frac{f_{y,x}(y,x)}{f_{x}(x)}\) provided that \(f_{x}(x)\neq 0\). Then for nonparametric estimation we have the Wabor estimator: \[f(x)=\frac{\sum_{i=1}^{n}y_{i}k\left(\frac{x_i-x}{h}\right)}{\sum_{i=1}^{n}k\left(\frac{x_i-x}{h}\right)}\]
 
 \end{document}
 
