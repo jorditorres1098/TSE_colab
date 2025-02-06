@@ -778,6 +778,9 @@ and
 
 We will develop here the same reasoning that was developed in the TD. \\
 
+\gabriele{There is a differnece with how this is addressed in the book, even 
+though the procedure is the same. Here we are looking at an estimator for the first derivative of the density, while in the book we are estimating the pdf}
+
 \textbf{Bounds of the bias}
 
 We have the following expression for the bias:
@@ -859,6 +862,11 @@ Using the property of the kernel function that \(\int_{\mathbb{R}} \mu^s k(\mu) 
 \[
 b(x_0) = \int_{\mathbb{R}} k(\mu) \cdot \frac{f^{(l)}(x_0 + \tau \mu h)}{(l-1)!} (\mu h)^{l-1} \, d\mu.
 \]
+
+\gabriele{A holder class is defined as a function of two parameters, $\beta$ and $L$. $l$ is simply the floor of $\beta$, ie the largest strictly smallest integer.}
+
+\gabriele{Whether a function satisfies a Holder conditions has implications for its smoothness. If it satisfies it, it is bounded and smooth.}
+
 
 Now we introduce the Hölder condition for the function \(f\), which holds by assumption. A function \(f\) belongs to the Hölder class of order \((l)\) if:
 
