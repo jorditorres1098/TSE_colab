@@ -1260,7 +1260,91 @@ In the end of the class we were also given some comments on MLE nonparametric es
 \subsection{notes on lecture 9}
 
 \subsubsection{Estimating a regression function}
-\(y=f(x)+ \epsilon\) where \(\E[|\epsilon|]<\infty\) and \(\E[\epsilon/x]=0\). Then if the conditional density function of y on x, denoted \(f_{y|x}\), is given by \(f_{y|X=x}=\frac{f_{y,x}(y,x)}{f_{x}(x)}\) provided that \(f_{x}(x)\neq 0\). Then for nonparametric estimation we have the Wabor estimator: \[f(x)=\frac{\sum_{i=1}^{n}y_{i}k\left(\frac{x_i-x}{h}\right)}{\sum_{i=1}^{n}k\left(\frac{x_i-x}{h}\right)}\]
+\(y=f(x)+ \epsilon\) where \(\E[|\epsilon|]<\infty\) and \(\E[\epsilon/x]=0\). Then if the conditional density function of y on x, denoted \(f_{y|x}\), is given by \(f_{y|X=x}=\frac{f_{y,x}(y,x)}{f_{x}(x)}\) provided that \(f_{x}(x)\neq 0\). An idea that was suggested during class is to use \(\hat{f}_{y,x}=\frac{1}{nh^{2}}\sum_{i}^{n}k\left(\frac{y_i-y}{h}\right)k\left(\frac{x_i-y}{h}\right)\), this leads to the the Nadaray-Watson estimator: \[f(x)=\frac{\sum_{i=1}^{n}y_{i}k\left(\frac{x_i-x}{h}\right)}{\sum_{i=1}^{n}k\left(\frac{x_i-x}{h}\right)}\]. \\
+
+A model is well-specified if the true \(|_{\prob_{\epsilon, x}}f^{x}\) is such that \(y= f^{*}(x^{*})+ \epsilon^{*}\), and \(\E\left[\epsilon^{*}|x^{*}\right]=0\), \(\E\left[|\epsilon^{*}|\right]\). Then \(\int d\prob_{\epsilon, x} d\epsilon= f^{*}(x)\) so we just need to distinguish \(x, x^{*}\). Such that, for example, \(0=f^{*}(x)-f(x)+\epsilon^{*}-\epsilon \iff f^{*}=f(x)\). \\
+
+We have that  \(\E[y|X=x]=\int_{\R}\frac{f_{y,x}(y,x)}{f_{x}(x)}dy=\dots\)
+And from that we can derive the following expression: \(\int_{\R}y f_{y,x}dy=\frac{1}{nh}\sum_{i=1}^{n}k\left(\frac{x_i-x}{h}\right)\left[\int_{\R}y k\left(\frac{y_i-y}{h}\right) dy\right]\), then by subsitution by parts we define \(u=\frac{y_i-y}{h}\iff uh=y_i-y\) and \(du=\frac{-dy}{h}\). If we substitute we get the following: \(\frac{1}{nh}\sum_{i=1}^{n}k\left(\frac{x_i-x}{h}\right)\left[\int_{\R}y_i k(u) du- h\int_{\R}u k(u) du\right]=\frac{1}{nh}\sum_{i=1}^{n}k\left(\frac{x_i-x}{h}\right)\left[\int_{\R}y_i k(u) du \right]\)
+ if k is symmetric (we gave the proof in seminar 2)
+
+ \begin{remark}
+    A classical exam question can be of the type: what if we want to estimate \(\E(f'(x))\)? etc--> naive plug in (\( \frac{1}{n}\sum_{i=1}^{n}f'(x)\)) can give us the marginal effects (now TD2 makes some sort of sense). 
+ \end{remark}
+
+
+ \subsubsection{Series Estimator}
+
+ Assume the data-generating process (DGP) is given by:
+ 
+ $$
+ y = f(x) + \epsilon, \quad x \sim U(0,1).
+ $$
+ 
+ Let \(e_j\) be a basis of \(L^2(0,1)\). Then, taking expectations,
+ 
+ $$
+ \mathbb{E}[y \cdot e_j(x)] = \mathbb{E}[f(x) \cdot e_j(x)] + \mathbb{E}[\epsilon \cdot e_j(x)].
+ $$
+ 
+ By the Law of Iterated Expectations (LIE) and the assumption that \(\mathbb{E}[\epsilon | x] = 0\) (since \(\epsilon\) is independent of \(x\)), we obtain:
+ 
+ $$
+ \mathbb{E}[y \cdot e_j(x)] = \mathbb{E}[f(x) \cdot e_j(x)].
+ $$
+ 
+ A natural estimator for this expectation is:
+ 
+ $$
+ \hat{C}_j = \frac{1}{n} \sum_{i=1}^{n} y_i e_j(x_i),
+ $$
+ 
+ which allows us to approximate \(f(x)\) using a truncated series expansion:
+ 
+ $$
+ \hat{f}^{T}(x) = \sum_{j=1}^{T} \hat{C}_j e_j(x).
+ $$
+ 
+ \paragraph{Alternative Case: When \(x \sim F(x)\)}
+ 
+ If instead we assume that \(x \sim F(x)\) with known density function \(f_x(x)\), we can rewrite the expectation as:
+ 
+ $$
+ \mathbb{E} \left[y \cdot \frac{e_j(x)}{f_x(x)}\right] = \mathbb{E} \left[f(x) \cdot \frac{e_j(x)}{f_x(x)}\right].
+ $$
+ 
+ Using the definition of expectation and canceling \(f_x(x)\):
+ 
+ $$
+ \int_{\mathbb{R}} f(x) \frac{e_j(x)}{f_x(x)} f_x(x) dx = \int_{\mathbb{R}} f(x) e_j(x) dx.
+ $$
+ 
+ Thus, we can estimate the coefficients in this case using:
+ 
+ $$
+ \hat{C}_j = \frac{1}{n} \sum_{i=1}^{n} y_i \frac{e_j(x_i)}{f_x(x_i)}.
+ $$
+ 
+ \paragraph{Trimmed Estimation for Large \(T\)}
+ 
+ An alternative estimation approach for large \(T\) introduces a trimming value \(	au\) to avoid numerical instability when \(\hat{\beta}_x(x_i)\) is close to zero. The modified estimator is:
+ 
+ $$
+ \hat{C}_j = \frac{\frac{1}{n} \sum_{i=1}^{n} y_i e_j(x_i)}{\max(\hat{\beta}_x(x_i), \tau)}.
+ $$
+ 
+ This ensures numerical stability by preventing extreme weight values that could lead to high variance in estimation. The choice of \(\tau\) depends on the application and is typically small.
+ 
+ 
+\subsubsection{Nonparametric least-squares}
+Let \((\varphi_h)_{h=1}^{p}\) be $p$ functions and \(f_\beta=\sum_{h=1}^{p}\beta_k \cdot \varphi_k\), then we define \(f=f_\beta+ r\) where $r$ is the remainder. Let \(\hat{\beta}\in \arg\min \left(\frac{1}{n}\sum_{i=1}^{n}\left(y_i-\sum_{p=1}^{P}\beta_h\cdot \varphi_k(x_i)\right)^{2}\right) \), and we take \(\hat{f}=\hat{f_\beta}\). If rank$(X)=P$ then \(\hat{\beta}=\left((\frac{1}{n}X'X)^{-1}\left(\frac{1}{n}X\left(\begin{array}{c}
+    y_1 \\
+    \dots \\
+    y_n
+    
+\end{array}\right)\right)\right)\). If instead we have $T>n$ such that $\text{rank}(x)<p$ then we need to use penalized estimators such that, for example: \(\hat{\beta}\in \arg\min \left(\frac{1}{n}\sum_{i=1}^{n}\left(y_i-\sum_{p=1}^{P}\beta_h\cdot \varphi_k(x_i)\right)^{2}+ \lambda \rho(\beta)\right) \) where $\rho(\beta)$ is the penalization coefficient. In LASSO, this coefficient is equal to \(\sum_{h=1}^{T}|\beta_h|\) and another example can be the ridge criteria that uses the function \(\sum_{k=1}^{T}\beta_k^{2}\)
+
+
 
 \end{document}
 

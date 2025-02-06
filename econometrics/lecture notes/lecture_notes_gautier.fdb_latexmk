@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1738776047.71045 "/Users/jorditorresvallverdu/Documents/GitHub/TSE_colab/econometrics/lecture notes/lecture_notes_gautier.tex" "lecture_notes_gautier.pdf" "lecture_notes_gautier" 1738776048.78869 0
+["pdflatex"] 1738866285.32247 "/Users/jorditorresvallverdu/Documents/GitHub/TSE_colab/econometrics/lecture notes/lecture_notes_gautier.tex" "lecture_notes_gautier.pdf" "lecture_notes_gautier" 1738866286.34873 0
   "../../macros_my.tex" 1738250896.29378 1455 9007b3c3a8cdac960ff8f0a6e3532567 ""
-  "/Users/jorditorresvallverdu/Documents/GitHub/TSE_colab/econometrics/lecture notes/lecture_notes_gautier.tex" 1738776047.13936 67537 48b47606f790addc981c7d28b156e93b ""
+  "/Users/jorditorresvallverdu/Documents/GitHub/TSE_colab/econometrics/lecture notes/lecture_notes_gautier.tex" 1738866284.85419 71988 83b2626e00a884c2cdb120d5c08bda1a ""
   "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1738420174.90868 339594 a5b5065d5ac438332843a98ceeded6df ""
   "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1734277980.39253 11548 65e4107434a595602cca075154f9e8e6 ""
   "/Users/jorditorresvallverdu/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm10.pk" 1738420179.89455 6984 538fe1e3dcb341dc0ec35889c4091a01 ""
@@ -209,10 +209,10 @@
   "graphs_1_nonparametrics.png" 1737973213.40371 212269 8ce2a4326dc2bbb95fe3044531b2c1d9 ""
   "kernel_1_example.png" 1738425414.12652 19500 f6e690617ea926bfe40d5dceebc54d7f ""
   "kernel_2_example.png" 1738425118.34001 16111 cb53d72022539da81035d6327ab26a23 ""
-  "lecture_notes_gautier.aux" 1738776048.63039 3837 66b4e4493d447263f06d1b36ebdae803 "pdflatex"
-  "lecture_notes_gautier.out" 1738776048.6314 3949 723285f085f1bafd3bd4e8fc15df1e9d "pdflatex"
-  "lecture_notes_gautier.tex" 1738776047.13936 67537 48b47606f790addc981c7d28b156e93b ""
-  "lecture_notes_gautier.toc" 1738776048.6317 1857 df20bb16ce2fdedb8d1c61f5c2463015 "pdflatex"
+  "lecture_notes_gautier.aux" 1738866286.20176 4360 288bf38f41674453af8078b6e7d3b199 "pdflatex"
+  "lecture_notes_gautier.out" 1738866286.20286 4306 2d73dcdcb62e9f3e3395d50f31634640 "pdflatex"
+  "lecture_notes_gautier.tex" 1738866284.85419 71988 83b2626e00a884c2cdb120d5c08bda1a ""
+  "lecture_notes_gautier.toc" 1738866286.20317 2216 590574cfd3e71ad6752436cda68b4a7f "pdflatex"
   "trade_off_nonparametrics.png" 1737973213.40691 113623 447f17145de99397b5639400a2fffdff ""
   (generated)
   "lecture_notes_gautier.aux"
